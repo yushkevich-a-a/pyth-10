@@ -40,13 +40,15 @@ while True:
         pets[nickname] = newPet
     elif cmd == "get":
         getnickname = input('Введите кличку питомца: ')
+        
         if not getnickname in pets:
             print(f"{getnickname} не найден в списке")
             continue
+
         else:
             petData = pets[getnickname]
             printData(petData, getnickname)
-            # print(f'Это {currentPet[species]} по кличке "{getnickname}". Возраст питомца: {currentPet[age]}. Имя владельца: {currentPet[owner]}')
+
     elif cmd == "get_all":
         for k in pets.keys():
             petData = pets[k]
