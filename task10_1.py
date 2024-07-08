@@ -19,7 +19,6 @@ def formatAge(age):
      
 def printData(data, nickname):
      print(f'Это {data["species"]} по кличке "{nickname}". Возраст питомца: {formatAge(data["age"])}. Имя владельца: {data["owner"]}')
-formatAge(14)
 
 while True:
     print('Введите команду(create/get/get_all/exit):')
